@@ -1,0 +1,11 @@
+*
+!*/
+!*.*
+!Makefile
+!checker_linux
+!checker_Mac
+!configure
+build/
+*.o
+.DS_STORE
+*dSYM*
