@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   debug.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/12 17:27:22 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/11/13 13:03:45 by dwuthric         ###   ########.fr       */
+/*   Created: 2022/11/13 12:54:27 by dwuthric          #+#    #+#             */
+/*   Updated: 2022/11/13 13:03:37 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#ifndef DEBUG_H
+# define DEBUG_H
 
-# include "../libft/include/libft.h"
 # include "stack.h"
-# include "error.h"
-# include "debug.h"
+# include "push_swap.h"
+
+void	print_stack_info(t_stack *stack);
 
 #endif

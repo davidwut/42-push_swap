@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 23:16:15 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/11/13 10:55:07 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/11/13 12:44:11 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,19 @@ t_stack	*stack_fill(int size, char **args)
 	stack = stack_init(size);
 	if (!stack)
 		return (NULL);
-	i = -1;
-	while (++i < size)
+	i = size;
+	while (--i >= 0)
 	{
-		stack->stack[i] = ft_atoi(args[i]);
-		j = -1;
-		while (++j < i)
+		stack->stack[i] = ft_atoi(args[size - 1 - i]);
+		j = size;
+		while (--j > i)
 			if (stack->stack[j] == stack->stack[i])
 			{
 				stack_free(stack);
 				return (NULL);
 			}
 	}
-	stack->top = i - 1;
+	stack->top = size - 1;
 	return (stack);
 }
 

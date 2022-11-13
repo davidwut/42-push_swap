@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 17:26:52 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/11/13 10:50:22 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/11/13 13:04:02 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char **argv)
 	stack = stack_fill(argc - 1, argv + 1);
 	if (!stack)
 		error();
-	ft_printf("Size: %d\nTop: %d\nTop elem: %d\n", stack->size, stack->top, stack->stack[stack->top]);
+	print_stack_info(stack);
 	stack_free(stack);
 	return (1);
 }
