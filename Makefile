@@ -15,13 +15,13 @@ CHECKER_DIR		:= $(SRC_DIR)/checker
 BUILD_DIR		:= build
 
 COMMON_SRCS		:= $(wildcard $(SRC_DIR)/*.c)
-COMMON_OBJS		:= $(COMMON_SRCS:%=$(BUILD_DIR)/%.o)
+COMMON_OBJS		:= $(COMMON_SRCS:%.c=$(BUILD_DIR)/%.o)
 
 PUSH_SWAP_SRCS	:= $(wildcard $(PUSH_SWAP_DIR)/*.c)
-PUSH_SWAP_OBJS	:= $(PUSH_SWAP_SRCS:%=$(BUILD_DIR)/%.o)
+PUSH_SWAP_OBJS	:= $(PUSH_SWAP_SRCS:%.c=$(BUILD_DIR)/%.o)
 
 CHECKER_SRCS	:= $(wildcard $(CHECKER_DIR)/*.c)
-CHECKER_OBJS	:= $(CHECKER_SRCS:%=$(BUILD_DIR)/%.o)
+CHECKER_OBJS	:= $(CHECKER_SRCS:%.c=$(BUILD_DIR)/%.o)
 
 all:				$(LIBFT) $(NAME)
 
@@ -31,7 +31,7 @@ $(LIBFT):
 $(NAME):			$(PUSH_SWAP_OBJS) $(COMMON_OBJS)
 					$(CC) $(CFLAGS) $(PUSH_SWAP_OBJS) $(COMMON_OBJS) -o $@ $(LIBFT)
 
-$(BUILD_DIR)/%.c.o:	%.c
+$(BUILD_DIR)/%.o:	%.c
 					@mkdir -p $(dir  $@)
 					$(CC) $(CFLAGS) -c $< -o $@
 

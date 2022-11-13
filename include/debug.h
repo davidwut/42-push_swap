@@ -6,7 +6,7 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 12:54:27 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/11/13 13:03:37 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/11/13 20:03:24 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,6 @@
 # include "push_swap.h"
 
 void	print_stack_info(t_stack *stack);
+void	print_stack_elems(t_stack *stack);
 
 #endif
