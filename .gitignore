@@ -6,6 +6,7 @@
 !checker_Mac
 !configure
 build/
+push_swap_visualizer/
 *.o
 .DS_STORE
 *dSYM*
