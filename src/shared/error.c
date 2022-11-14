@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error.h                                            :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/13 10:46:30 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/11/13 10:46:55 by dwuthric         ###   ########.fr       */
+/*   Created: 2022/11/13 10:44:19 by dwuthric          #+#    #+#             */
+/*   Updated: 2022/11/13 23:07:37 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ERROR_H
-# define ERROR_H
+#include "push_swap.h"
 
-void	error(void);
-
-#endif
+void	error(void)
+{
+	ft_printf("Error\n");
+	exit(0);
+}

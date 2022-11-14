@@ -6,11 +6,11 @@
 /*   By: dwuthric <dwuthric@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 12:54:27 by dwuthric          #+#    #+#             */
-/*   Updated: 2022/11/13 21:52:27 by dwuthric         ###   ########.fr       */
+/*   Updated: 2022/11/13 23:07:27 by dwuthric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "debug.h"
+#include "stack.h"
 
 void	print_stack_info(t_stack *stack)
 {
